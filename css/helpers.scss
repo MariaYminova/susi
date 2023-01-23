@@ -1,11 +1,12 @@
 .igra {
-  font-family: 'Igra Sans';
+  font-family: "Igra Sans";
   color: #404040;
   font-size: 16px;
   line-height: 21px;
 
   &-12 {
     font-size: 12px;
+    line-height: 12px;
   }
 
   &-14 {
@@ -14,7 +15,7 @@
 
   &-20 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
   }
 
   &-26 {
@@ -35,7 +36,7 @@
   }
 
   &-orange {
-    color: #F0AF3B;
+    color: #f0af3b;
   }
 
   &-white {
@@ -44,13 +45,13 @@
 }
 
 .roboto {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #404040;
   font-size: 16px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 24px;
 
-  &-fw-medium{
+  &-fw-medium {
     font-weight: 500;
   }
 
@@ -83,15 +84,18 @@
   }
 
   &-orange {
-    color: #F0AF3B;
+    color: #f0af3b;
   }
 
   &-white {
     color: #ffffff;
   }
 }
- 
+
 .m {
+  &-r-5 {
+    margin-right: 5px;
+  }
   &-r-10 {
     margin-right: 10px;
   }
@@ -126,7 +130,6 @@
   &-r-75 {
     margin-right: 75px;
   }
-
 
   &-l-10 {
     margin-left: 10px;
@@ -204,7 +207,7 @@
     margin-top: 40px;
   }
 
-
+  &-t-43 {
+    margin-top: 43px;
+  }
 }
-
-
