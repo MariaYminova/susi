@@ -83,7 +83,8 @@
 .button {
   border-radius: 6px;
   padding: 19px 50px 17px 50px;
-  display: inline-flex;
+  display: flex;
+  align-items: center;
   background-color: rgba(240, 175, 59, 1);
   color: #ffffff;
   box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.07), 0px 15px 30px rgba(240, 175, 59, 0.2);
@@ -92,11 +93,23 @@
   &-white {
     background-color: rgb(255, 255, 255);
     color: #000000;
-    border: 1px solid rgba(0, 0, 0, 0.042);
     border-radius: 6px;
     padding: 14px 20px;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     z-index: 2;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+  }
+
+  &-transparent {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px 20px;
+    border: 2px solid #f7f7f7;
+    border-radius: 6px;
+    margin-right: 15px;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -141,15 +154,22 @@
 .price {
   display: flex;
   align-items: center;
-  position: relative;
+  height: 41px;
+
+  &__bg {
+    background-image: url("../icon/icon-price.svg");
+    width: 102.5px;
+    height: 40px;
+    padding: 9px 0px 0px 40px;
+  }
 
   &__sum {
-    position: absolute;
-    left: 40px;
   }
   &__sum-card {
-    left: 35px;
-    position: absolute;
+    background-image: url("../icon/icon-price-card.svg");
+    width: 93px;
+    height: 35px;
+    padding: 6px 0px 0px 33px;
   }
 }
 
@@ -164,12 +184,18 @@
     flex-direction: column;
     align-items: center;
     margin-right: 3px;
-    margin: 5px 3px 0 5px;
+    margin: 5px 7px 0 5px;
     z-index: 2;
   }
   &__plus {
+    background-image: url("../icon/icon-plus.svg");
+    width: 18px;
+    height: 18px;
   }
   &__minus {
+    background-image: url("../icon/icon-minus.svg");
+    width: 18px;
+    height: 18px;
   }
 }
 
@@ -251,6 +277,17 @@
     height: 177px;
     object-fit: contain;
   }
+
+  &__like {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.icon-like {
+  background-image: url("../icon/icon-like.svg");
+  width: 19px;
+  height: 17px;
 }
 
 .swiper-scrollbar-drag {
@@ -289,4 +326,119 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
   display: flex;
+}
+
+.filter {
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 40px;
+
+  &__left {
+    display: flex;
+  }
+
+  &__right {
+    display: flex;
+    margin-left: 80px;
+  }
+
+  &__line {
+    position: absolute;
+    width: 2px;
+    height: 120px;
+    background: #f7f7f7;
+    top: 0px;
+    left: 736px;
+  }
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  &__card {
+    margin: 0 18px 18px 0;
+    width: 391px;
+    height: 548px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 40px 40px 46px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__card:nth-child(4n) {
+    margin: 0px 0px 18px 0px;
+  }
+}
+
+.navigation {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  &__tab {
+    padding: 10px;
+    border: 2px solid #e6e6e6;
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 10px;
+    border-radius: 6px;
+    width: 46px;
+    height: 46px;
+    font-family: "Igra Sans";
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  &__tab.active {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+    color: #f0af3b;
+    background-color: #ffffff;
+    border: 0px solid #e6e6e6;
+  }
+
+  &__arrows {
+    padding: 10px;
+    border: 2px solid #e6e6e6;
+    background-color: rgba(255, 255, 255, 0);
+    margin-right: 10px;
+    border-radius: 6px;
+    width: 46px;
+    height: 46px;
+    font-family: "Igra Sans";
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.slider-positions {
+  margin-top: 40px;
+
+  &__slide {
+    display: none;
+  }
+
+  &__slide.active {
+    display: flex;
+  }
+}
+
+.next {
+  padding: 10px;
+  border: 2px solid #e6e6e6;
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 10px;
+  border-radius: 6px;
+  width: 46px;
+  height: 46px;
+  font-family: "Igra Sans";
+  font-size: 14px;
+  line-height: 14px;
 }
