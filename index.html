@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/flexboxgrid.css">
 </head>
 
 <body>
@@ -34,36 +35,37 @@
           <div class="roboto roboto-14 roboto-fw-medium">9:00 — 00:00</div>
         </div>
 
-        <a href="#">
+        <a class="header-namber" href="#">
           <div class="number roboto roboto-14 roboto-fw-medium"> <img class="m-r-15" src="icon\icon-phone.svg" alt=" ">
             7
             (495) 450 - 600</div>
         </a>
 
-        <a href="#">
-          <div class="rtg-white m-r-20">
+        <a class="rtg-white" href="#">
+        
             <img class="" src="icon/icon-person.svg" alt=" ">
-          </div>
+          
         </a>
 
-        <a href="#">
-          <div class="rtg-white m-r-20">
+        <a class="rtg-white"  href="#">
+          
             <div class="icon-like"> </div>
-          </div>
+        
         </a>
 
-        <a href="#">
-          <div class="rtg-white">
+        <a  class="rtg-white" href="#">
+         
             <span class="roboto-14 roboto-fw-medium m-r-5">770 ₽</span>
             <img class="" src="icon/basket-icon.svg" alt=" ">
-          </div>
+          
         </a>
     </header>
     <main>
       <section class="section-big">
         <div class="rtg-slider"></div>
         <div class="section-big__left">
-          <h1 class="baner-heading igra igra-44 m-b-25">Быстрая доставка вкусной японской еды</h1>
+          <img class="section-big__logo-adaptive" src="icon/icon-logo-adaptive.svg" alt="">
+          <h1 class="baner-heading igra igra-44">Быстрая доставка вкусной японской еды</h1>
           <a href="#"> <button class="button igra"> Посмотреть меню</button>
           </a>
         </div>
@@ -157,43 +159,96 @@
           </div>
         </div>
       </section>
-      <section class="section-menu">
-        <a href="#" class="card-menu">
-          <div class="igra igra-26 m-t-30">Роллы</div>
-          <img src="img/img-susi.png" alt=" ">
-        </a>
-        <a href="#" class="card-menu">
-          <div class="igra igra-26 m-t-30">Сеты</div>
-          <img src="img/img-set.png" alt=" ">
-        </a>
-        <a href="#" class="card-menu">
-          <div class="igra igra-26 m-t-30">Запеченные роллы</div>
-          <img src="img/img-hot.png" alt=" ">
-        </a>
-        <a href="#" class="card-menu">
-          <div class="igra igra-26 m-t-30">Воки</div>
-          <img src="img/img-vok.png" alt=" ">
-        </a>
-        <a href="#" class="card-menu">
-          <div class="igra igra-26 m-t-30">Супы</div>
-          <img src="img/img-sup.png" alt=" ">
-        </a>
-        <a href="#" class="card-menu">
-          <div class="igra igra-26 m-t-30">Напитки</div>
-          <img src="img/img-drinks.png" alt=" ">
-        </a>
 
+
+      <section class="section-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12
+                    col-sm-12
+                    col-md-6
+                    col-lg-4">
+              <div class="card-menu">
+                <div class="igra">Роллы</div>
+
+                <img src="img/img-susi.png" alt="" class="card-menu__img">
+
+              </div>
+            </div>
+
+            <div class="col-xs-12
+        col-sm-12
+        col-md-6
+        col-lg-4">
+              <div class="card-menu">
+                <div class="igra">Сеты</div>
+
+                <img src="img/img-set.png" alt="" class="card-menu__img" >
+
+              </div>
+            </div>
+
+            <div class="col-xs-12
+    col-sm-12
+    col-md-6
+    col-lg-4">
+              <div class="card-menu">
+                <div class="igra ">Запеченные роллы</div>
+
+                <img src="img/img-hot.png" alt="" class="card-menu__img">
+
+              </div>
+            </div>
+
+            <div class="col-xs-12
+    col-sm-12
+    col-md-6
+    col-lg-4">
+              <div class="card-menu">
+                <div class="igra ">Воки</div>
+
+                <img src="img/img-vok.png" alt="" class="card-menu__img">
+
+              </div>
+            </div>
+
+            <div class="col-xs-12
+    col-sm-12
+    col-md-6
+    col-lg-4">
+              <div class="card-menu">
+                <div class="igra">Супы</div>
+
+                <img src="img/img-sup.png" alt="" class="card-menu__img">
+
+              </div>
+            </div>
+
+            <div class="col-xs-12
+    col-sm-12
+    col-md-6
+    col-lg-4">
+              <div class="card-menu">
+                <div class="igra">Напитки</div>
+
+                <img src="img/img-drinks.png" alt="" class="card-menu__img">
+
+              </div>
+            </div>
+
+          </div>
+        </div>
       </section>
 
       <section class="section-popular">
 
-        <h2 class="igra igra-26 m-b-30">Популярное</h2>
+        <h2 class="h2">Популярное</h2>
 
         <div class="swiper slider-popular">
           <div class="swiper-wrapper">
             <div class="swiper-slide product-card">
               <div class="product-card__top">
-                <img class="" src="icon/icon-star.svg" alt=" ">
+                <button class="button-star "></button>
                 <button class="product-card__like">
                   <div class="icon-like"> </div>
                   <div class="igra igra-12 m-l-5"> 54</div>
@@ -230,7 +285,7 @@
 
             <div class="swiper-slide product-card">
               <div class="product-card__top">
-                <img class="" src="icon/icon-star.svg" alt=" ">
+                <button class="button-star "></button>
                 <button class="product-card__like">
                   <div class="icon-like"> </div>
                   <div class="igra igra-12 m-l-5"> 41</div>
@@ -267,7 +322,7 @@
             </div>
             <div class="swiper-slide product-card">
               <div class="product-card__top">
-                <img class="" src="icon/icon-star.svg" alt=" ">
+                <button class="button-star"></button>
                 <button class="product-card__like">
                   <div class="icon-like"> </div>
                   <div class="igra igra-12 m-l-5"> 26</div>
@@ -304,7 +359,7 @@
             </div>
             <div class="swiper-slide product-card">
               <div class="product-card__top">
-                <img class="" src="icon/icon-star.svg" alt=" ">
+                <button class="button-star"></button>
                 <button class="product-card__like">
                   <div class="icon-like"> </div>
                   <div class="igra igra-12 m-l-5"> 37</div>
@@ -341,7 +396,7 @@
             </div>
             <div class="swiper-slide product-card">
               <div class="product-card__top">
-                <img class="" src="icon/icon-star.svg" alt=" ">
+                <button class="button-star"></button>
                 <button class="product-card__like">
                   <div class="icon-like"> </div>
                   <div class="igra igra-12 m-l-5"> 54</div>
@@ -377,7 +432,7 @@
             </div>
             <div class="swiper-slide product-card">
               <div class="product-card__top">
-                <img class="" src="icon/icon-star.svg" alt=" ">
+                <button class="button-star"></button>
                 <button class="product-card__like">
                   <div class="icon-like"> </div>
                   <div class="igra igra-12 m-l-5"> 41</div>
@@ -414,7 +469,7 @@
             </div>
             <div class="swiper-slide product-card">
               <div class="product-card__top">
-                <img class="" src="icon/icon-star.svg" alt=" ">
+                <button class="button-star"></button>
                 <button class="product-card__like">
                   <div class="icon-like"> </div>
                   <div class="igra igra-12 m-l-5"> 26</div>
@@ -479,6 +534,40 @@
       </div>
 
     </footer>
+
+    <footer class="footer-adaptive">
+
+
+      <div class="footer-adaptive__top">
+        <a class="footer-adaptive__top" href="">
+          <div class="roboto roboto-grey">ТЕЛЕФОН</div>
+          <div class="roboto">7 (495) 450 - 600</div>
+        </a>
+
+        <a href="">
+          <div class="igra igra-12 igra-orange m-t-20">Обратная связь</div>
+        </a>
+
+        <a class="footer-adaptive__top m-t-30" href="">
+          <div class="roboto roboto-grey">АДРЕС</div>
+          <div class="roboto">г. Москва, ул. Московская, 56</div>
+        </a>
+      </div>
+
+      <div class="footer-adaptive__center">
+        <a href="#" class="m-r-20"> <img src="icon/icon-vk.svg" alt=" "> </a>
+        <a class="m-r-20" href="#"> <img src="icon/icon-ok.svg" alt=" "> </a>
+        <a class="m-r-20" href="#"> <img src="icon/icon-fb.svg" alt=" "> </a>
+        <a href="#"> <img src="icon/icon-inst.svg" alt=" "> </a>
+      </div>
+      <div class="footer-adaptive__bottom">
+      
+        <div class="roboto roboto-grey m-b-5">© 2017 OishīSushi</div>
+      <a class="igra igra-12 igra-orange" href="#">Согласие на обработку персональных данных</a>
+      </div>
+
+    </footer>
+
 
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
